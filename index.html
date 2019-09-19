@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Guac-a-mole</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class = "game-info">
+      <div>
+        <img id = "guac-logo" src="./images/Guac-logo.jpg" alt="guac-logo">
+      </div>
+      <div>
+        <button class="btn" id="select-Levels" onclick = "on()">Select Level</button>
+      </div>
+      <div id="levels" onclick="off()">
+        <h2>Select level:</h2>
+        <button class = "level-btn" id = "easy" onclick="Game.lvlDiff('Easy')">Easy</button>
+        <button class = "level-btn" id = "medium" onclick="Game.lvlDiff('Medium')">Medium</button>
+        <button class = "level-btn" id = "hard" onclick="Game.lvlDiff('Hard')">Hard</button>
+      </div>
+      <div>
+        <button class="btn" onclick="Game.startGame()"> Start game </button> 
+      </div>
+      <div class = "score-sect">
+        <h3>Level Difficulty: <span id= "lvl-diff">Easy</span></h3>
+        <h3>Score: <Span id="score">0</Span> / 10 </h3>
+      </div>
+    </div>
+    <div id = "bowl-grid">
+      <div class="guac-bowl"> 
+        <img src="./images/bowl.png" class="bowl"/>
+        <img src="./images/avocado.png" class="avocado" onclick="Game.bonk(this)"/>
+      </div>
+      <div class="guac-bowl"> 
+        <img src="./images/bowl.png" class="bowl"/>
+        <img src="./images/avocado.png" class="avocado" onclick="Game.bonk(this)"/>
+      </div>
+      <div class="guac-bowl"> 
+        <img src="./images/bowl.png" class="bowl"/>
+        <img src="./images/avocado.png" class="avocado" onclick="Game.bonk(this)"/>
+      </div>
+      <div class="guac-bowl"> 
+        <img src="./images/bowl.png" class="bowl"/>
+        <img src="./images/avocado.png" class="avocado" onclick="Game.bonk(this)"/>
+      </div>
+      <div class="guac-bowl"> 
+        <img src="./images/bowl.png" class="bowl"/>
+        <img src="./images/avocado.png" class="avocado" onclick="Game.bonk(this)"/>
+      </div>
+      <div class="guac-bowl"> 
+        <img src="./images/bowl.png" class="bowl"/>
+        <img src="./images/avocado.png" class="avocado" onclick="Game.bonk(this)"/>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

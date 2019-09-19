@@ -1,0 +1,96 @@
+body
+{
+  text-align: center;
+  background: url("./images/Guacamole-Wallpaper-Gallery.jpg") no-repeat center center fixed;
+  background-size: cover;
+
+}
+#guac-logo{
+  width: 30%;
+  justify-content: center;
+}
+
+.score-sect{
+  text-align: end;
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(54, 144, 185);
+}
+.btn
+{
+  color:white;
+  background: rgb(0, 128, 0);  
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  width: 20%;
+  margin: 10px 0px;
+  padding: 10px;
+}
+.level-btn{
+  color: white;
+  background-color: blue;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  width: 15%;
+  margin: 10px;
+  padding: 5px; 
+}
+
+#bowl-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 200px));
+  grid-gap: 10px;
+  justify-content: center;
+}
+.guac-bowl
+{
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.bowl
+{
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height:50%;
+  z-index: 1;
+}
+.avocado
+{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: -50px;
+  z-index: 0;
+  width: 70%;
+  height: 50%;
+  margin: 0 auto;
+  transition: all 0.4s;
+  
+}
+
+.up
+{
+  bottom: 50px;
+}
+
+#levels{
+  color: rgb(0, 128, 0);
+  display: none;
+  width: 70%;
+  margin: 0 10px;
+  padding: 20px;
+}
+.winner{
+  background: url("./Guac-a-mole/Congrats.gif") no-repeat center center fixed;
+  width: 100%;
+}
+.tryAgain{
+  background: url("./Guac-a-mole/try-again.gif") no-repeat center center fixed;
+  width: 100%;
+}
